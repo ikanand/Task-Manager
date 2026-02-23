@@ -3,13 +3,6 @@ description: A capability under an Epic delivering functional value
 title: "Feature: "
 labels: ["feature"]
 body:
-  - type: input
-    id: parent-epic
-    attributes:
-      label: Parent Epic
-      placeholder: "#epic-issue-number"
-    validations:
-      required: true
 
   - type: textarea
     id: description

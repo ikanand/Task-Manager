@@ -3,14 +3,6 @@ description: Technical implementation under a Story
 title: "Task: "
 labels: ["task"]
 body:
-  - type: input
-    id: parent-story
-    attributes:
-      label: Parent Story
-      description: Enter the Story issue number
-      placeholder: "#story-issue-number"
-    validations:
-      required: true
 
   - type: textarea
     id: description

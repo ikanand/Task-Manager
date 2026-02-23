@@ -3,14 +3,7 @@ description: Sprint-sized deliverable under a Feature
 title: "Story: "
 labels: ["story"]
 body:
-  - type: input
-    id: parent-feature
-    attributes:
-      label: Parent Feature
-      description: Enter the Feature issue number
-      placeholder: "#feature-issue-number"
-    validations:
-      required: true
+
 
   - type: textarea
     id: story
