@@ -1,0 +1,20 @@
+name: Task
+description: Technical implementation task
+title: "Task: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: What needs to be implemented?
+    validations:
+      required: false
+
+  - type: input
+    id: related
+    attributes:
+      label: Related Story / Issue
+      placeholder: #issue-number
+    validations:
+      required: false

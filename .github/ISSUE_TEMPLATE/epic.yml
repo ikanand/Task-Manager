@@ -10,7 +10,7 @@ body:
       description: What business problem does this solve?
       placeholder: Describe the purpose and expected outcome.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: user-impact
@@ -19,7 +19,7 @@ body:
       description: Who benefits and how?
       placeholder: Describe how this impacts users.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: success-metrics
@@ -28,7 +28,7 @@ body:
       description: How will we measure success?
       placeholder: Define measurable KPIs.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: scope
@@ -37,7 +37,7 @@ body:
       description: What is included in this Epic?
       placeholder: List major capabilities.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: out-of-scope

@@ -1,0 +1,36 @@
+name: User Story
+description: Deliver user-facing value within a sprint
+title: "Story: "
+labels: ["story"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: Use standard format
+      placeholder: |
+        As a <user>
+        I want <goal>
+        So that <benefit>
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define testable conditions
+      placeholder: |
+        - Given ...
+        - When ...
+        - Then ...
+    validations:
+      required: false
+
+  - type: input
+    id: estimate
+    attributes:
+      label: Story Points
+      placeholder: 1, 2, 3, 5, 8
+    validations:
+      required: false
