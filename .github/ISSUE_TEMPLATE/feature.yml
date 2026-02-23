@@ -1,0 +1,28 @@
+name: Feature
+description: A capability under an Epic delivering functional value
+title: "Feature: "
+labels: ["feature"]
+body:
+  - type: input
+    id: parent-epic
+    attributes:
+      label: Parent Epic
+      placeholder: "#epic-issue-number"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Describe what this feature enables.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: List included capabilities.
+    validations:
+      required: true

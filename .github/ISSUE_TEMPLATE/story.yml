@@ -1,31 +1,38 @@
 name: User Story
-description: Deliver user-facing value within a sprint
+description: Sprint-sized deliverable under a Feature
 title: "Story: "
 labels: ["story"]
 body:
+  - type: input
+    id: parent-feature
+    attributes:
+      label: Parent Feature
+      description: Enter the Feature issue number
+      placeholder: "#feature-issue-number"
+    validations:
+      required: true
+
   - type: textarea
     id: story
     attributes:
       label: User Story
-      description: Use standard format
       placeholder: |
         As a <user>
         I want <goal>
         So that <benefit>
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: acceptance
     attributes:
       label: Acceptance Criteria
-      description: Define testable conditions
       placeholder: |
         - Given ...
         - When ...
         - Then ...
     validations:
-      required: false
+      required: true
 
   - type: input
     id: estimate
@@ -33,4 +40,4 @@ body:
       label: Story Points
       placeholder: 1, 2, 3, 5, 8
     validations:
-      required: false
+      required: true

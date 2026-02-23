@@ -1,20 +1,21 @@
 name: Task
-description: Technical implementation task
+description: Technical implementation under a Story
 title: "Task: "
 labels: ["task"]
 body:
+  - type: input
+    id: parent-story
+    attributes:
+      label: Parent Story
+      description: Enter the Story issue number
+      placeholder: "#story-issue-number"
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
-      label: Description
-      placeholder: What needs to be implemented?
+      label: Task Description
+      placeholder: Describe the technical work required.
     validations:
-      required: false
-
-  - type: input
-    id: related
-    attributes:
-      label: Related Story / Issue
-      placeholder: #issue-number
-    validations:
-      required: false
+      required: true
