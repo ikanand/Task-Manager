@@ -1,0 +1,67 @@
+name: Epic
+description: Create a high-level business objective spanning multiple stories
+title: "Epic: "
+labels: ["epic"]
+body:
+  - type: textarea
+    id: business-objective
+    attributes:
+      label: Business Objective
+      description: What business problem does this solve?
+      placeholder: Describe the purpose and expected outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-impact
+    attributes:
+      label: User Impact
+      description: Who benefits and how?
+      placeholder: Describe how this impacts users.
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will we measure success?
+      placeholder: Define measurable KPIs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: In Scope
+      description: What is included in this Epic?
+      placeholder: List major capabilities.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT included?
+      placeholder: Clarify boundaries.
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Systems, teams, prerequisites
+      placeholder: List dependencies.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks
+      description: Known delivery or technical risks
+      placeholder: List potential risks.
+    validations:
+      required: false
